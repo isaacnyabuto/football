@@ -8,4 +8,22 @@
     margin: 0 auto;
     margin-top:50px;
     margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(2px);
+}
+.about:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    background-color: #1a85f8;
+    backdrop-filter: none;
+}
+.background{
+    background-image: url("/src/img4.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 100vh;
 }

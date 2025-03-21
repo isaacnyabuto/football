@@ -3,7 +3,8 @@ import './abount.css'
 
  const about = () => {
   return (
-    <div className='about'>
+  <div className='background'>
+      <div className='about'>
         <h1>About us</h1>
     <p>
     <h2>WHO WE ARE:</h2>
@@ -22,6 +23,8 @@ import './abount.css'
 Founded in 2023, kenya team association was born out of a shared passion for sports. Since then, we have grown into a trusted name in sports, serving countless satisfied customers worldwide.</h3>
 
     </div>
+
+  </div>
   )
 }
 

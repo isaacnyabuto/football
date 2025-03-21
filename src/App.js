@@ -6,10 +6,10 @@ import Contact from './contact';
 import About from './about';
 import Login from './login';
 import Signup from './signup';
+//import Backgroundvideo from './backgroundvideo';
 function App() {
   return (
     <Router>
-      <Home />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
