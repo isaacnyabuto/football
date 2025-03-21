@@ -6,6 +6,7 @@ import Contact from './contact';
 import About from './about';
 import Login from './login';
 import Signup from './signup';
+//import Navbar from './navbar';
 //import Backgroundvideo from './backgroundvideo';
 function App() {
   return (
