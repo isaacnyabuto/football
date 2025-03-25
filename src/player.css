@@ -1,0 +1,72 @@
+.background{
+  background-image: url("/src/img4.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  height: 100vh; 
+}
+
+/* Container Styling */
+.register-player-container {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .register-player-container:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    background-color: #64a2e4;
+    backdrop-filter: none;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  /* Input Fields */
+  input, select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* File Input */
+  input[type="file"] {
+    border: none;
+  }
+  
+  /* Submit Button */
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  

@@ -27,7 +27,8 @@ export default function SignupForm() {
   };
 
   return (
-    <div className="signup-container">
+   <div className="background">
+     <div className="signup-container">
       <h2 className="signup-title">Sign Up</h2>
       {error && <p className="signup-error">{error}</p>}
       <form onSubmit={handleSubmit}>
@@ -55,5 +56,6 @@ export default function SignupForm() {
         <button type="submit" className="signup-button">Sign Up</button>
       </form>
     </div>
+   </div>
   );
 }

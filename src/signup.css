@@ -1,10 +1,20 @@
 .signup-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #6231eb;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #7e5df5;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(2px);
+  }
+  
+  .signup-container:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    background-color: #64a2e4;
+    backdrop-filter: none;
   }
   
   .signup-title {

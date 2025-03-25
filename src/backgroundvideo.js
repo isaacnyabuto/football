@@ -9,7 +9,7 @@ const BackgroundVideo = () => {
         Your browser does not support the video tag.
       </video>
       <div className="content">
-        <h1>WELCOME TO KENYA TEAM ASSOCIATION</h1>
+        <h1>WELCOME TO  THE KENYA TEAM ASSOCIATION</h1>
       </div>
     </div>
   );

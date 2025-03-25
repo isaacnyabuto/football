@@ -20,8 +20,8 @@
     text-align: center;
     padding-top: 30px;
     height: 500px;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-    backdrop-filter: blur(2px); /* Apply blur effect */
+     background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(2px);/* Apply blur effect */
 }
 .contact-container:hover {
     transform: scale(1.05);

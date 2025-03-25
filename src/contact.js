@@ -36,7 +36,6 @@ const Contact = () => {
       <div className="business-hours">
         <h3>Business Hours</h3>
         <p>🕒 Monday - Friday: 9:00 AM - 6:00 PM</p>
-        <p>🕒 Saturday: 10:00 AM - 3:00 PM</p>
       </div>
 
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./login.css"; // External CSS for styling
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   const [formData, setFormData] = useState({ username: "", password: "", rememberMe: false });
@@ -32,7 +33,7 @@ const Login = () => {
 
         <button type="submit">Login</button>
       </form>
-      <p>Don't have an account? <a href="/">Sign up</a></p>
+      <p>Don't have an account? <NavLink to="/signup">Sign up</NavLink></p>
     </div>
     </div>
   );
