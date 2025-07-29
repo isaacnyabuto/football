@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./contact.css";
+import "../Styles/contact.css";
 //import Navbar from "./navbar";
 
 const Contact = () => {

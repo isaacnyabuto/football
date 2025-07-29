@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.css"; 
+import "../Styles/navbar.css"; 
 import { NavLink } from "react-router-dom"; // ✅ Correctly imported
 import BackgroundVideo from "./backgroundvideo";
 

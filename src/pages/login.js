@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./login.css"; // External CSS for styling
+import "../Styles/login.css"; // External CSS for styling
 import { NavLink } from "react-router-dom";
 
 const Login = () => {
