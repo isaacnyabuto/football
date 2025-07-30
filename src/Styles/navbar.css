@@ -1,55 +1,85 @@
-/* Navbar.css */
-
+/* === Navbar Container === */
 .navbar {
-    background-color: #373738;
-    color: white;
-    padding: 15px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 30px;
-  }
-  
-  .brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    background-color: #161f2e;
-    color: white;
-    border: none;
+  position: fixed; /* ✅ Always at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Logo left, buttons right */
+  align-items: center;
+  padding: 15px 10px;
+  background: rgba(0, 0, 0, 0.4); /* Transparent dark background */
+  backdrop-filter: blur(10px); /* Slight blur effect */
+  color: white;
+  z-index: 1000; /* Always above content */
+  height: 10vh;
+}
+
+/* === Left Section (Logo + Icon) === */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  color: gold; /* Football color */
+}
+
+.nav-left h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* === Right Section (Buttons) === */
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 2px solid white;
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+  gap: 10px;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+}
+
+.nav-btn-register {
+  border-color: gold;
+  color: gold;
+}
+
+.nav-btn-register:hover {
+  background: gold;
+  color: black;
+}
+
+/* === Responsive for Mobile === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
     padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
   }
-  
-  .nav-links a:hover {
-    background-color: #0056b3;
+
+  .nav-left {
+    margin-bottom: 10px;
   }
+
+  .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

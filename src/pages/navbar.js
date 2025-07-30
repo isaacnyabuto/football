@@ -1,39 +1,18 @@
 import React from "react";
-import "../Styles/navbar.css"; 
-import { NavLink } from "react-router-dom"; // ✅ Correctly imported
-import BackgroundVideo from "./backgroundvideo";
+import "../Styles/Navbar.css";
+import { FaFootballBall } from "react-icons/fa";
 
-const Home = () => {
-    function handleClick() {
-        window.location.href = '/login';
-        console.log("clicked");
-    }
-  
-    return (
-      <div>
-          <nav className="navbar">
-            <div className="container">
-                <a href="/" className="brand">KENYA TEAM ASSOCIATION</a>
-                <ul className="nav-links">
-                    <li>
-                        <NavLink to="/">HOME</NavLink> {/* ✅ Fixed capitalization */}
-                    </li>
-                    <li>
-                        <NavLink to="/contact">CONTACTS</NavLink> {/* ✅ Fixed attribute `to` */}
-                    </li>
-                    <li>
-                        <NavLink to="/about">ABOUT</NavLink> {/* ✅ Fixed capitalization */}
-                    </li>
-                    <li>
-                        <NavLink to="/login" onClick={handleClick}>LOGIN</NavLink> {/* ✅ Fixed capitalization */}
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <BackgroundVideo />
+export default function NavBar() {
+  return (
+    <nav className="navbar">
+      <div className="nav-left">
+        <FaFootballBall className="nav-icon" />
+        <h2>Football Registration</h2>
       </div>
-
-    );
-};
-
-export default Home;
+      <div className="nav-right">
+        <button className="nav-btn">Login</button>
+        <button className="nav-btn nav-btn-register">Register</button>
+      </div>
+    </nav>
+  );
+}
