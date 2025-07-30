@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "../Styles/signup.css"; // Import external CSS file
+import { useNavigate } from "react-router-dom";
 
 export default function SignupForm() {
+    const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -27,35 +29,24 @@ export default function SignupForm() {
   };
 
   return (
-   <div className="background">
-     <div className="signup-container">
-      <h2 className="signup-title">Sign Up</h2>
-      {error && <p className="signup-error">{error}</p>}
+    <div className="background">
+     <div className="login-container">
+         {/* Back button */}
+        <button className="back-button" onClick={() => navigate(-1)}>
+          ⬅ Back
+        </button>
+      <h2>Register</h2>
       <form onSubmit={handleSubmit}>
-        <div className="input-group">
-          <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="enter username"
-          />
-        </div>
-       
-        <div className="input-group">
-          <label>Password</label>
-          <input
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            placeholder="********"
-          />
-        </div>
-        <button type="submit" className="signup-button">Sign Up</button>
+        <label>Username:</label>
+        <input type="username" name="username" value={formData.email} onChange={handleChange} required />
+
+        <label>Password:</label>
+        <input type="password" name="password" value={formData.password} onChange={handleChange} required />
+
+        <button type="submit">Register</button>
       </form>
+  
     </div>
-   </div>
+    </div>
   );
 }
