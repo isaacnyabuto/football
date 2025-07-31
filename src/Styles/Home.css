@@ -19,13 +19,13 @@
 
 .animated-text {
 
-  font-size: xx-large;
+  font-size: 20px;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: bolder;
   text-shadow: 2px 2px 5px black;
 }
 .message-text{
-  font-size: x-large;
+  font-size: 50px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 5px black;
 

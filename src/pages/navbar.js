@@ -9,7 +9,7 @@ export default function NavBar() {
     <nav className="navbar">
       <div className="nav-left">
         <FaFootballBall className="nav-icon" />
-        <h2>Football Registration</h2>
+        <h2 className="heading">Football Registration</h2>
       </div>
       <div className="nav-right">
            <button onClick={() => navigate("/login")} className="nav-btn">Login</button>

@@ -1,14 +1,14 @@
 import React, { useEffect, useState, useMemo } from "react";
 import "../Styles/Home.css";
 import NavBar from "../pages/Navbar";
-import backgroundImage from "../images/img4.jpg"; // Import image
+import backgroundImage from "../images/img1.jpg"; // Import image
 
 export default function HomePage() {
  
   
   // Messages for the typewriter effect
   const messages = useMemo(
-    () => ["Welcome to Football Registration!"],
+    () => ["Welcome to  the Football Registration Portal!"],
     []
   );
 

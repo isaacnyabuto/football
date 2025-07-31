@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "../Styles/login.css"; // External CSS for styling
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import backgroundImage from "../images/img2.jpg";
 
 const Login = () => {
+    const navigate = useNavigate();
   const [formData, setFormData] = useState({ username: "", password: "", rememberMe: false });
-
+  
   const handleChange = (e) => {
     const { name, type, checked, value } = e.target;
     setFormData({ ...formData, [name]: type === "checkbox" ? checked : value });
@@ -16,7 +19,12 @@ const Login = () => {
   };
 
   return (
-   <div className="background">
+   <div className="background"  style={{
+        backgroundImage: `url(${backgroundImage})`, // Set background image
+      }}>
+         <button className="back-button" onClick={() => navigate(-1)}>
+        ⬅ BACK
+      </button>
      <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>

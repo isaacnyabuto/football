@@ -10,7 +10,7 @@
   padding: 15px 10px;
   background: rgba(0, 0, 0, 0.4); /* Transparent dark background */
   backdrop-filter: blur(10px); /* Slight blur effect */
-  color: white;
+  color: rgb(233, 226, 226);
   z-index: 1000; /* Always above content */
   height: 10vh;
 }
@@ -20,11 +20,14 @@
   display: flex;
   align-items: center;
 }
+.heading{
+  color: bisque;
+}
 
 .nav-icon {
   font-size: 1.8rem;
   margin-right: 10px;
-  color: gold; /* Football color */
+  color: rgb(219, 218, 210); /* Football color */
 }
 
 .nav-left h2 {
