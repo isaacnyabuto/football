@@ -9,6 +9,14 @@
     "not safari <= 17.6"
   ],
   "hints": {
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ]
   }
 }
